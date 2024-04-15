@@ -1,0 +1,74 @@
+.gallery img{
+    width: 50%;
+    margin-left: 50%;
+    transform: translate(-50%);
+    height: auto;
+    vertical-align: bottom;
+}
+.choice-btn img{
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+.gallery{
+    margin:0 0 7px 0;
+}
+
+.slick-prev, .slick-next {
+    position: absolute;
+    z-index: 3;
+    top: 42%;
+    cursor: pointer;
+    outline: none;
+    border-top: 3px solid gray;
+    border-right: 3px solid gray;
+    height: 25px;
+    width: 25px;
+}
+
+.slick-prev {
+    left:2.5%;
+    transform: rotate(-135deg);
+}
+
+.slick-next {
+    right:2.5%;
+    transform: rotate(45deg);
+}
+
+.choice-btn{
+    margin-bottom: 15px;
+    padding: 0;
+}
+
+.choice-btn li{
+    cursor: pointer;
+    outline: none;
+    background:#333;
+    width:25%!important;
+}
+
+.choice-btn li img{
+    opacity: 0.4;
+}
+
+.choice-btn li.slick-current img{
+    opacity: 1;
+}
+
+.choice-btn .slick-track {
+    transform: unset !important;
+}
+
+.wrapper{
+    width:94%;
+    max-width:900px;
+    margin:0 auto;
+}
+
+ul{
+    margin:0;
+    padding: 0;
+    list-style: none;
+}

@@ -1,0 +1,201 @@
+body {
+    color: #192D2E;
+    font-size: 1.2em;
+    line-height: 1.6;
+    background: #e6f2f2;
+    overflow-x: hidden;
+}
+
+p {
+    line-height: 1.5;
+    padding-left: 2rem;
+    text-indent: 1rem;
+}
+
+
+/*フェードイン*/
+.fadeIn {
+    transition: 1.2s ease-in-out;
+    transform: translateY(30px);
+    opacity: 0;
+}
+
+.fadeIn.on {
+    transform: translateY(0);
+    opacity: 1.0;
+}
+
+
+/*button*/
+
+.button {
+    display: inline-block;
+    position: relative;
+    left: 36%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 1.2rem 8rem;
+    font-family: "Poppins-Regular";
+    font-size: 25pt;
+    text-decoration: none;
+    color: #617f7f;
+    border: solid 4.5px #617f7f;
+    border-radius: 18rem;
+}
+
+.button:hover {
+    color: #f4f4f4;
+    background-color: #617f7f;
+    transition: .5s;
+}
+
+.contentsHead {
+    position: flex;
+    font-family: "NotoSansJP-SemiBold";
+    margin-top: 1.5em;
+    font-size: 42pt;
+    line-height: 1.6;
+    color: #334747;
+}
+
+.contentsButton {
+    display: inline-block;
+    position: relative;
+    left: 10%;
+    margin: 1rem;
+    padding: 1rem 6.5rem;
+    font-family: "Poppins-Light";
+    font-size: 25pt;
+    text-decoration: none;
+    border-radius: 18rem;
+    color: #617f7f;
+    border: solid 4.5px #617f7f;
+    border-radius: 18rem;
+    z-index: 0;
+}
+
+.contentsButton:hover {
+    color: #f4f4f4;
+    background-color: #617f7f;
+    transition: .5s;
+}
+
+.membersButton {
+    display: inline-block;
+    position: relative;
+    left: 40%;
+    margin: 1rem;
+    padding: 1rem 6.5rem;
+    font-family: "Poppins-Light";
+    font-size: 25pt;
+    text-decoration: none;
+    border-radius: 18rem;
+    color: #617f7f;
+    border: solid 4.5px #617f7f;
+    border-radius: 18rem;
+    z-index: 0;
+}
+
+.membersButton:hover {
+    color: #f4f4f4;
+    background-color: #617f7f;
+    transition: .5s;
+}
+
+
+/*各項目*/
+img {
+    width: 100%;
+}
+
+
+.interview-head {
+    position: flex;
+    margin-top: auto;
+    padding-top: 1em;
+    padding-left: 2em;
+}
+
+.interview-content {
+    position: flex;
+    margin: auto;
+    padding-top: 4em;
+    padding-left: 2em;
+    padding-right: 1em;
+    padding-bottom: auto;
+}
+
+.interviewProfile {
+    display: flex;
+    padding: 0 4.5em 0 4.5em;
+    margin-bottom: 2rem;
+}
+
+
+.interviewProfile-image {
+    width: 70%;
+    object-fit: cover;
+}
+
+.interviewProfile-title {
+    position: flex;
+    padding: auto;
+    margin: 0 0 0 2rem;
+    font-family: "NotoSansJP-Bold";
+    color: #f38630;
+    font-size: 33pt;
+    margin-bottom: 4.8rem;
+}
+
+.interviewProfile-graduation {
+    font-family: "NotoSansJP-SemiBold";
+    font-size: 18pt;
+    color: #192D2E;
+    margin: 0 0 1rem 2rem;
+    display: block;
+    unicode-bidi: isolate
+}
+
+.interviewProfile-name {
+    font-family: "NotoSansJP-SemiBold";
+    font-size: 28pt;
+    margin: 0 0 1rem 5rem;
+    font-weight: bold;
+}
+
+.interviewMain {
+    display: flex;
+    padding: 0 4.5em 0 4.5em;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+}
+
+.interviewText {
+    margin: 0 .5em 0 .5em;
+    padding: auto;
+}
+
+.interviewQuestion {
+    font-family: "NotoSansJP-SemiBold";
+    font-size: 16pt;
+    color: #192D2E;
+    margin-bottom: 1rem;
+    display: block;
+    unicode-bidi: isolate
+}
+
+.interviewAnswer {
+    font-family: "NotoSansJP-Regular";
+    font-size: 16pt;
+    color: #192D2E;
+    margin: auto 1rem 1rem 1rem;
+    padding: auto;
+    display: block;
+    unicode-bidi: isolate
+}
+
+.interviewImage {
+    margin: auto;
+    padding: auto;
+    width: 140%;
+}

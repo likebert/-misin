@@ -1,0 +1,277 @@
+@charset "UTF-8";
+html{
+    font-size: 100%;
+}
+body{
+    background-image: url(img/jusyou_haikei.jpg);
+    background-color:rgba(230,242,242,0.95);
+    background-blend-mode:lighten;
+    min-height: 100vh;
+    margin:0;
+    background-size: 150%;
+    background-repeat: repeat-y;
+}
+
+/*
+#EFD9A7
+239,217,167
+#e6f2f2
+230,242,242
+*/
+/*ヘッダー*/
+
+header {
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+}
+.logo {
+	position: fixed;
+	top: 0;
+	left: 2px;
+	height: 20%;
+	width: 20%;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+label .menu {
+	position: fixed;
+	right: -100px;
+	top: -100px;
+	z-index: 200;
+	width: 200px;
+	height: 200px;
+	background: #EFD9A7;
+	border-radius: 50% 50% 50% 50%;
+	-webkit-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
+	box-shadow: 0 0 0 0 #C97F04, 0 0 0 0 #C97F04;
+	cursor: pointer;
+
+}
+
+label .hamburger {
+	position: absolute;
+	top: 135px;
+	left: 50px;
+	width: 30px;
+	height: 2px;
+	background: #fff;
+	display: block;
+	-webkit-transform-origin: center;
+	transform-origin: center;
+	-webkit-transition: .5s ease-in-out;
+	transition: .5sease-in-out;
+}
+
+label .hamburger:after,
+label .hamburger:before {
+	-webkit-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
+	content: "";
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+}
+
+label .hamburger:before {
+	top: -10px;
+}
+
+label .hamburger:after {
+	bottom: -10px;
+}
+
+label input {
+	display: none;
+}
+
+label input:checked+.menu {
+	box-shadow: 0 0 0 100vw #EFD9A7, 0 0 0 100vh #EFD9A7;
+	border-radius: 0;
+
+}
+label input:checked+.menu .hamburger {
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+
+}
+
+label input:checked+.menu .hamburger:after {
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+	bottom: 0;
+
+}
+
+label input:checked+.menu .hamburger:before {
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+	top: 0;
+
+}
+
+label input:checked+.menu+ul {
+	opacity: 1;
+}
+label ul {
+	z-index: 200;
+	position: fixed;
+	list-style: none;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	opacity: 0;
+	-webkit-transition: .25s 0s ease-in-out;
+	transition: .25s 0s ease-in-out;
+	/*visibility: hidden;
+	opacity: 0;*/
+}
+
+label a {
+	margin-bottom: 1em;
+	font-family: "Poppins-Medium";
+	font-size: 28pt;
+	display: block;
+	color: #f38630;
+	text-decoration: none;
+
+}
+
+.first-v {
+    background-image: url(img/kari.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    top: 0;
+}
+.matomari{
+    margin-top: 100px;
+}
+.matomari h1{
+    text-align: center;
+    background-color:#f38630;
+    padding: 30px;
+    color: white;
+    font-size: 200%;
+}
+
+section{
+    margin: 0px 25px 0px 25px
+}
+.zentai{
+    justify-content: space-between;
+    margin-bottom: 50px;
+    background-color: rgba(255,255,255,0.8);
+    border:solid 10px #EFD9A7;
+}
+article{
+    color: black;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.text p{
+    font-size: 150%;
+}
+.kuhaku{
+    padding-top:25px;
+}
+.renraku {
+    text-align: center;
+}
+.renraku h1{
+    font-size: 200%;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    color:black;
+    background-color: #EFD9A7;
+}
+.renraku p{
+    padding-bottom: 25px;
+}
+.syousai{
+    padding-top: 50px;
+    padding-bottom: 25px;
+}
+
+
+
+hr {
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #e5e7eb;
+}
+
+address {
+	font-style: normal;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 0.25rem;
+	margin-bottom: 1.5rem;
+}
+
+.footer {
+	margin-top: 10rem;
+	padding: 2rem;
+	font-size: 15px;
+	color: #4b5564;
+	background: #fff;
+}
+
+.footer__navi-heading {
+	font-weight: 600;
+}
+
+.footer__logo {
+	display: inline-block;
+	margin-bottom: 1.5rem;
+}
+
+.footer__navi li {
+	margin-bottom: 0.75rem;
+}
+
+.footer__address {
+	margin-bottom: 2rem;
+}
+
+.footer__address a {
+	text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+	.md-flex {
+		display: flex;
+	}
+
+	.md-justify-between {
+		justify-content: space-between;
+	}
+
+	.grid {
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}
+
+	.footer__address a {
+		text-decoration: none;
+		pointer-events: none;
+	}
+}
+
+@media (min-width: 1024px) {
+	.lg-flex {
+		display: flex;
+	}
+}
